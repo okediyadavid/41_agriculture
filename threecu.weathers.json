@@ -1,0 +1,179 @@
+[{
+  "_id": {
+    "$oid": "65aeb62a9e1221782dd1367e"
+  },
+  "const": "const",
+  "mongoose": "Model",
+  "=": "=",
+  "require('mongoose')": "mongoose.model({"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc58"
+  },
+  "//": "const",
+  "model": {
+    "js": "mongoose"
+  },
+  "(assuming": "=",
+  "it's": "require('mongoose');"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc59"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc5a"
+  },
+  "//": "const",
+  "model": {
+    "js": "weatherSchema"
+  },
+  "(assuming": "=",
+  "it's": "new",
+  "your": "mongoose.Schema({"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc5b"
+  },
+  "your": "city:",
+  "model": "{"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc5c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc5d"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc5e"
+  },
+  "your": "},"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc5f"
+  },
+  "your": "temperature:",
+  "model": "{"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc60"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc61"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc62"
+  },
+  "your": "},"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc63"
+  },
+  "your": "windSpeed:",
+  "model": "{"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc64"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc65"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc66"
+  },
+  "your": "},"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc67"
+  },
+  "your": "humidity:",
+  "model": "{"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc68"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc69"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc6a"
+  },
+  "your": "},"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc6b"
+  },
+  "//": "});"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc6c"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc6d"
+  },
+  "//": "const",
+  "model": {
+    "js": "WeatherModel"
+  },
+  "(assuming": "=",
+  "it's": "mongoose.model('Weather',",
+  "your": "weatherSchema);"
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc6e"
+  }
+},
+{
+  "_id": {
+    "$oid": "65b01ae927fccc546b21cc6f"
+  },
+  "//": "module.exports",
+  "model": {
+    "js": "="
+  },
+  "(assuming": "WeatherModel;"
+},
+{
+  "_id": {
+    "$oid": "65b01b2527fccc546b21cc70"
+  },
+  "//": "{"
+},
+{
+  "_id": {
+    "$oid": "65b01b2527fccc546b21cc71"
+  },
+  "your": "_id\": ObjectId(\"65ae5d85357df689d52180aa\"),\r\n    \"city\": \"Lagos\",\r\n    \"temperature\": 28.5,\r\n    \"windSpeed\": 5.2,\r\n    \"humidity\": 75\r\n  }\r\n  \r\n\r\nconst mongoose = require('mongoose');\r\n\r\n\r\nconst weatherSchema = new mongoose.Schema({\r\n    city: {\r\n        type: String,\r\n        required: true,\r\n    },\r\n    temperature: {\r\n        type: Number,\r\n        required: true,\r\n    },\r\n    windSpeed: {\r\n        type: Number,\r\n        required: true,\r\n    },\r\n    humidity: {\r\n        type: Number,\r\n        required: true,\r\n    },\r\n});\r\n\r\nconst WeatherModel = mongoose.model('Weather', weatherSchema);\r\n\r\nmodule.exports = WeatherModel;\r\n"
+}]
